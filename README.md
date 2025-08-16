@@ -11,7 +11,6 @@ Traditional RFFI systems are designed for **closed-set classification**, where a
 This work addresses that challenge by:
 
 - Training a **VQ-VAE classifier** where the decoder is replaced with an MLP.  
-- Utilizing **Mahalanobis distance** in both triplet-loss training and vector quantization for better discrimination.  
 - Leveraging **histogram features** of inverse codeword distances (e.g., entropy, peak relations, mean, median) for **open-set recognition**.  
 - Employing **DBSCAN clustering** and **centroid matching** to discover and assign new classes.  
 - Supporting **extended codebooks**, where rogue samples can form new labeled codewords for downstream classification.  
@@ -38,6 +37,5 @@ We use the **LoRa dataset** introduced in [Shen et al., 2022](https://arxiv.org/
 - **Open-set recognition** with histogram-based metrics.  
 - **Generalized class discovery** via clustering (DBSCAN, spectral methods, BIC-based estimates).  
 - **Codebook expansion** with new rogue-derived codewords.  
-- **Visualization tools** (PCA, clustering plots, purity metrics).  
 
 ---
